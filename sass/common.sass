@@ -1,0 +1,517 @@
+@import '_mixin'
+/* 基础样式重置 */
+
+*
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+
+ul, ol
+  list-style: none
+
+a
+  text-decoration: none
+  color: inherit
+img
+  max-width: 100%
+  height: auto
+  display: block
+
+/* 基础字体设置 */
+body
+  font-size: 16px
+  color: #333
+  background: #fff
+  font-family: Arial, 'Helvetica Neue', 'PingFang SC', 'Microsoft YaHei', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+  line-height: 1.6
+/* 标题样式 */
+h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1,p
+  margin-top: 0
+  font-weight: normal
+  line-height: 1
+h1, .h1
+  font-size: 2rem
+h2,.h2
+  font-size: 1.75rem
+h3,.h3
+  font-size: 1.5rem
+h4,.h4
+  font-size: 1.25rem
+h5,.h5
+  font-size: 1.25rem
+h6,.h6
+  font-size: 1rem
+.clearfix::after
+  content: ""
+  display: table
+  clear: both
+/* 响应式容器 */
+.container
+  width: 100%
+  padding-right: 15px
+  padding-left: 15px
+  margin-right: auto
+  margin-left: auto
+  +media-breakpoint-up(sm)
+    max-width: 540px
+
+  +media-breakpoint-up(md)
+    max-width: 720px
+
+  +media-breakpoint-up(lg)
+    max-width: 960px
+
+  +media-breakpoint-up(xl)
+    max-width: 1140px
+
+  +media-breakpoint-up(xxl)
+    max-width: 1442px // 对应1440px断点，容器宽度通常略小
+
+/* 网格系统 */
+.row
+  display: flex
+  flex-wrap: wrap
+  margin-right: -15px
+  margin-left: -15px
+.row.reverse
+  flex-direction: row-reverse
+.col
+  position: relative
+  width: 100%
+  padding-right: 15px
+  padding-left: 15px
+// 响应式列
+// 基础列（xs）
+.col-xs
+  flex: 1 0 0%
+
+@for $i from 1 through 12
+  .col-xs-#{$i}
+    flex: 0 0 calc(100% / 12 * $i)
+    max-width: calc(100% / 12 * $i)
+
++media-breakpoint-up(sm)
+  .col-sm
+    flex: 1 0 0%
+
+  @for $i from 1 through 12
+    .col-sm-#{$i}
+      flex: 0 0 calc(100% / 12 * $i)
+      max-width: calc(100% / 12 * $i)
+
++media-breakpoint-up(md)
+  .col-md
+    flex: 1 0 0%
+
+  @for $i from 1 through 12
+    .col-md-#{$i}
+      flex: 0 0 calc(100% / 12 * $i)
+      max-width: calc(100% / 12 * $i)
+
++media-breakpoint-up(lg)
+  .col-lg
+    flex: 1 0 0%
+
+  @for $i from 1 through 12
+    .col-lg-#{$i}
+      flex: 0 0 calc(100% / 12 * $i)
+      max-width: calc(100% / 12 * $i)
+
++media-breakpoint-up(xl)
+  .col-xl
+    flex: 1 0 0%
+
+  @for $i from 1 through 12
+    .col-xl-#{$i}
+      flex: 0 0 calc(100% / 12 * $i)
+      max-width: calc(100% / 12 * $i)
+
++media-breakpoint-up(xxl)
+  .col-xxl
+    flex: 1 0 0%
+
+  @for $i from 1 through 12
+    .col-xxl-#{$i}
+      flex: 0 0 calc(100% / 12 * $i)
+      max-width: calc(100% / 12 * $i)
+.flex
+  display: flex
+  flex-wrap: wrap
+.justify-between
+  justify-content: space-between
+.vertical-center
+  align-items: center
+.horizontal-center
+  justify-content: center
+.header_right
+  img
+    display: inline-block
+.hide
+  display: none
+.hide-xs
+  +media-breakpoint-down(xs)
+    display: none
+.hide-ssm
+  +media-breakpoint-down(ssm)
+    display: none
+.hide-sm
+  +media-breakpoint-down(sm)
+    display: none
+.hide-md
+  +media-breakpoint-down(md)
+    display: none
+.hide-lg
+  +media-breakpoint-down(lg)
+    display: none
+.hide-xl
+  +media-breakpoint-down(xl)
+    display: none
+.hide-xxl
+  +media-breakpoint-down(xxl)
+    display: none
+.hidden
+  display: none
+.form_fields
+  width: 100%
+// 公共顶部
+.header_top
+  display: none
+  background-color: #0c1f47
+  padding: 17px 0 16px
+  .header_left
+    margin-bottom: 10px
+    p
+      font-size: 17px
+      line-height: 17px
+      color: #7c9bbf
+      font-weight: bold
+  .header_right
+    a
+      font-size: 16px
+      color: #7c9bbf
+      padding-right: 30px
+      img
+        vertical-align: bottom
+        margin-right: 10px
+    .dropdown-hover
+      img
+        vertical-align: bottom
+        margin-right: 10px
+    .dropdown-hover
+      position: relative
+    .ch-lanz
+      position: absolute
+      background-color: white
+      z-index: 1002
+      border: 1px solid #ccc
+      padding: 5px 10px !important
+      border-radius: 3px
+      left: 6px
+      line-height: 26px
+      top: 43px
+      height: auto !important
+.header_bottom
+  position: relative
+  padding: 20px 0
+  .logo
+    width: 74px
+  .logo-text
+    padding-left: 15px
+    padding-top: 11px
+    p
+      font-size: 18px
+      line-height: 22px
+      color: #5880ae
+      margin-bottom: 0
+      margin-top: 5px
++media-breakpoint-up(md)
+  .header_top
+    display: block
++media-breakpoint-up(lg)
+  .header_top
+    .header_left
+      margin-bottom: 0
+// 导航样式
+.nav
+  padding: 0
+  .menu-toggle
+    display: none
+    cursor: pointer
+    position: absolute
+    top: 50%
+    right: 15px
+    transform: translateY(-50%)
+    z-index: 1001
+    border: 1px solid $blue
+    padding: 4px
+    border-radius: 3px
+    span
+      display: block
+      width: 25px
+      height: 2px
+      background-color: $blue
+      margin: 5px 0
+      transition: all 0.3s ease
+  .nav-menu
+    display: flex
+    justify-content: flex-start
+    li
+      position: relative
+      margin-right: 1px
+      a
+        display: block
+        padding: 5px
+        color: #fff
+        font-size: 16px
+        transition: background-color 0.3s
+        &:hover
+          background-color: #13439d
+      &.active
+        a
+          background-color: #13439d
+          font-weight: bold
+// 移动端菜单按钮动画
+.menu-toggle.active
+  span:nth-child(1)
+    transform: rotate(45deg) translate(5px, 5px)
+  span:nth-child(2)
+    opacity: 0
+  span:nth-child(3)
+    transform: rotate(-45deg) translate(7px, -7px)
+// 顶部结束
+
+// 公共底部导航
+footer
+  .bottom_nav
+    background: url(../img/common/bottom-bg.jpg) no-repeat center center
+    background-size: cover
+    padding: 20px 0
+    color: #fff
+    .left
+      .bottom_logo
+        margin-bottom: 20px
+      a
+        display: block
+        margin-top: 8px
+        img
+          display: inline-block
+          vertical-align: middle
+          padding-right: 15px
+    .right
+      margin-top: 30px
+      .bottom_nav_ul
+        margin-top: 30px
+        ul
+          li
+            p
+              font-weight: bold
+              margin-bottom: 15px
+  .copyright
+    background-color: #0c1f47
+    padding: 25px 0
+    text-align: center
+    color: #fff
+    font-size: 18px
+    margin-bottom: 0
+// 留言板样式
+.hidden
+  display: none
+.liuyan
+  padding: 30px 0
+  background-color: #f8f8f8
+  margin: 0 auto
+  h2
+    font-weight: bold
+    text-align: center
+    color: #333
+  .liuyan_des
+    margin: 0 auto 10px
+    font-size: 18px
+    line-height: 32px
+    color: #333
+    text-align: center
+  .form_container
+    margin-top: 50px
+    .form_group
+      margin-bottom: 20px
+      label
+        display: block
+        font-size: 20px
+        color: #333
+        margin-bottom: 4px
+      input[type="text"],
+      input[type="email"],
+      input[type="tel"],
+      select,
+      textarea,
+      option
+        width: 100%
+        padding: 8px 30px
+        font-size: 20px
+        color: #333
+        border: none
+        &:focus
+          outline: none
+      .input_group
+        display: flex
+        padding-top: 3px
+        input:first-child
+          margin-right: 15px
+    .checkbox_group
+      display: flex
+      flex-wrap: wrap
+      gap: 20px 40px
+      background: #fff
+      padding: 15px
+      label
+        display: flex
+        align-items: center
+        font-size: clamp(14px, 2vw, 20px)
+        color: #333
+        cursor: pointer
+        input[type="checkbox"]
+          width: 22px
+          height: 22px
+          margin-right: 10px
+          accent-color: #09bbfe
+    .submit_btn
+      padding: 15px 100px
+      background-image: linear-gradient(0deg,#e43e0f 0%, #ff8c6b 100%),linear-gradient(#ffc480,#f36913)
+      background-blend-mode: normal,normal
+      border-radius: 20px
+      font-size: 30px
+      color: #fff
+      cursor: pointer
+      border: none
+      display: block
+      margin: 0 auto
+    // 错误提示样式
+    .error-message
+      display: block
+      color: #ff0000
+      font-size: 18px
+      margin-top: 5px
+      text-align: left
+// 响应式导航
++media-breakpoint-up(md)
+  .nav
+    .nav-menu
+      li
+        a
+          color: #000
+      li.active
+        a
+          background-color: transparent
+  .liuyan
+    padding: 50px 0
+    h2
+      font-size: 40px
+      margin-bottom: 25px
+      .submit_btn
+        margin-top: 50px
++media-breakpoint-up(lg)
+  .nav
+    .nav-menu
+      li
+        a
+          padding: 0 7px
+  .liuyan
+    padding: 80px 0
+    h2
+      font-size: 60px
+    .form_container
+      form
+        margin: 0 -15px
+      .form_group
+        float: left
+        width: 50%
+        padding: 0 15px
+      .sele,.last
+        width: 100%
+      #whatsapp-fields,#telegram-fields,#phone-fields,#wechat-fields
+        margin-top: 32px
++media-breakpoint-up(xl)
+  .nav
+    .nav-menu
+      li
+        a
+          font-size: 18px
+          padding: 15px
+  footer
+    .bottom_nav
+      padding: 60px 0
+      .left
+        float: left
+        width: 20%
+      .right
+        float: left
+        width: 80%
+        margin-top: 10px
+        .bottom_nav_ul
+          margin-top: 0
+          ul
+            li
+              p
+                font-size: 20px
+              a
+                font-size: 16px
+                line-height: 35px
+    .copyright
+      padding: 33px 0
++media-breakpoint-up(xxl)
+  .nav
+    .nav-menu
+      li
+        a
+          padding: 15px 20px
++media-breakpoint-down(md)
+  .nav
+    .menu-toggle
+      display: block
+    .nav-menu
+      display: none
+      position: absolute
+      top: 100%
+      left: 0
+      right: 0
+      background-color: #1c47b7
+      z-index: 1000
+      width: 100%
+      li
+        display: block
+        margin-right: 0
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1)
+        a
+          padding: 15px 20px
+      &.show
+        display: block
+
+#formtel
+  width: 100%
+  margin-bottom: 15px
+  .flex.justify-between
+    display: flex
+    justify-content: space-between
+    gap: 10px
+    #contact-method
+      flex: 1
+    #countryCode
+      flex: 1
+    #whatsapp
+      flex: 1
+    +media-breakpoint-down(sm)
+      #whatsapp
+        width: 100%
+        flex: none
+    +media-breakpoint-up(lg)
+      gap: 30px
+#contact-method,#countryCode,#whatsapp
+  font-size: clamp(14px, 2vw, 20px)
+  margin-bottom: 5px
+  padding: 8px 28px
+// +media-breakpoint-down(md)
+//   #translate
+//     margin-right: 16px
++media-breakpoint-down(ssm)
+  .header_top .hide-ssm
+    display: none

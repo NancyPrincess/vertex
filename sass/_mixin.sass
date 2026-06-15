@@ -1,0 +1,61 @@
+// 响应式断点混合宏
+@mixin media-breakpoint-up($name)
+  @if $name == xs
+    @media (min-width: 360px)
+      @content
+  @if $name == ssm
+    @media (min-width: 480px)
+      @content
+  @if $name == sm
+    @media (min-width: 576px)
+      @content
+  @else if $name == md
+    @media (min-width: 768px)
+      @content
+  @else if $name == lg
+    @media (min-width: 992px)
+      @content
+  @else if $name == xl
+    @media (min-width: 1200px)
+      @content
+  @else if $name == xxl
+    @media (min-width: 1440px)
+      @content
+
+@mixin media-breakpoint-down($name)
+  @if $name == xs
+    @media (max-width: 359.98px)
+      @content
+  @if $name == ssm
+    @media (max-width: 479.98px)
+      @content
+  @if $name == sm
+    @media (max-width: 575.98px)
+      @content
+  @else if $name == md
+    @media (max-width: 767.98px)
+      @content
+  @else if $name == lg
+    @media (max-width: 991.98px)
+      @content
+  @else if $name == xl
+    @media (max-width: 1199.98px)
+      @content
+  @else if $name == xxl
+    @media (max-width: 1439.98px)
+      @content
+
+/* 媒体查询混合 */
+@mixin media-breakpoint-up($name, $breakpoints: (xs: 360px, ssm: 480px, sm: 576px, md: 768px, lg: 992px, xl: 1200px, xxl: 1440px))
+  $min: map-get($breakpoints, $name)
+  @media (min-width: $min)
+    @content
+
+@mixin media-breakpoint-down($name, $breakpoints: (xs: 360px, ssm: 480px, sm: 576px, md: 768px, lg: 992px, xl: 1200px, xxl: 1440px))
+  $max: map-get($breakpoints, $name) - 0.02px
+  @media (max-width: $max)
+    @content
+
+$blue: #1c47b7
+$blue-hover: #13439d
+$grey-light: #868686

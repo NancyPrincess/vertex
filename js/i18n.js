@@ -1,0 +1,29 @@
+translate.office.append('chinese_simplified',`
+Lifeng Technology=力锋科技
+Lifeng logo=力锋徽标
+Home =首页
+Home=首页
+Thank you for your interest in Lifeng Technology. If you would like to know more=感谢您对力锋科技的兴趣。如果您想了解更多
+Henan Linfeng Technology Co., Ltd.=河南力锋科技有限公司
+Henan Lifeng Technology Co., Ltd. is a modern production-type enterprise that specializes in the research and=河南力锋科技有限公司是一家现代生产类型的企业，专门研究研究和
+From design to smart manufacturing, one-stop solution - Lifeng Technology, helping enterprises reduce costs and=从设计到智能制造，一站式解决方案 - 力锋科技，帮助企业降低成本和
+Quickly understand the enterprise information of Lifieng, and focus precisely on the development of sheet=快速了解力锋的企业信息，并精确地关注表的发展
+Lifeng E-mail=力锋邮箱
+Lifeng Technology to be a manufacturing service provider with warmth=力锋科技将成为具有温暖的制造服务提供商
+Introducing Lifeng Technology=介绍力锋科技
+Henan Lifeng Technology Co., Ltd. =河南力锋科技有限公司
+Relying on the strong strength in scientific and technological innovation, Lifeng Technology has=依靠科学和技术创新的强大力量，力锋科技拥有
+as "Zhengzhou Lifeng"=为"郑州力锋"
+Lifeng Technology has successively won the honorary titles of national science and technology -=力锋科技连续赢得了国家科学和技术的荣誉冠军 -
+Up to now, Lifeng Technology is in a leading position in the domestic industry and occupies a=到目前为止，力锋科技在国内行业处于领先地位，并占据
+economic benefits, Lifeng Technology also actively undertakes social responsibilities, and actively=经济利益，力锋科技还积极承担社会责任，并积极地
+It has jointly established Zhengzhou Lifeng Automation Equipment Co., Ltd. =它已经共同建立了郑州力锋自动化设备有限公司
+About Lifeng=关于力锋
+Lifeng Technology has a high - quality and international - level senior technical talent team and=力锋科技拥有高质量和国际水平的高级技术人才团队，
+hereinafter referred to as "Lifeng Technology"=以下称为"力锋科技"
+Lifeng Technology earnestly understands the important spirit of General Secretary Xi about=力锋科技认真了解秘书长的重要精神
+Shihui, the chairman and general manager of Lifeng Technology, serves as the executive director=力锋科技董事长兼总经理担任执行董事
+With the strong support of the government and the full help of friends from all walks of life, Lifeng Technology has achieved a series of breakthroughs, and economic indicators such as product variety,=在政府的大力支持和各行各业的朋友的全部帮助下，力锋科技取得了一系列突破，以及产品多样性等经济指标，
+of the Luoyang Private Enterprise Association.=洛阳私企协会。
+Whats App =Whats App
+`);
