@@ -1,0 +1,229 @@
+@import '_mixin'
+.banner
+  position: relative
+  .banner_cont
+    position: absolute
+    top: 50%
+    left: 0%
+    transform: translate(0%, -50%)
+    width: 100%
+    h1
+      font-weight: bold
+      font-size: 20px
+      color: #fff
+      text-align: center
+    p
+      font-size: 16px
+      color: #fff
+      text-align: center
+      margin-top: 10px
+    span
+      display: none
+      width: 80%
+      height: 1px
+      background-color: #fff
+      margin: 20px auto 15px
+    ul
+      display: none
+      align-items: center
+      justify-content: center
+      li
+        a
+          font-size: 15px
+          color: #fff
+.bread_nav
+  margin-top: 15px
+  ul
+    display: flex
+    align-items: center
+    li
+      a
+        font-size: 17px
+        color: #000
+        margin-right: 10px
+        &:last-child
+          margin-right: 0
+        &:hover
+          color: #20365a
+.product_cont
+  padding: 20px 0
+  .product_list
+    .s_nav
+      border: solid 1px #abc0df
+      padding: 10px 15px
+      display: flex
+      flex-wrap: wrap
+      justify-content: start
+      li
+        border-bottom: 1px solid #abc0df
+        padding: 10px
+        margin-right: 15px
+        a
+          font-size: 16px
+          color: #575757
+          span
+            color: #fff
+        a:hover
+          font-weight: bold
+          color: #214580
+          span
+            color: #214580
+      li.active
+        a
+          color: #214580
+          font-weight: bold
+          span
+            color: #214580
+      li:first-child
+        display: none
+        background-image: linear-gradient(53deg,#c2e9fb 0%,#a1c4fd 100%),linear-gradient(#000000,#000000)
+        background-blend-mode: normal,normal
+        color: #fff
+    .product_box
+      padding: 40px 0 20px
+      ul
+        li
+          margin-bottom: 30px
+          a:first-child
+            img
+              width: 100%
+            p
+              font-size: 16px
+              color: #000
+              text-align: center
+              margin-top: 15px
+          a:first-child:hover
+            p
+              color: #214580
+              font-weight: bold
+          a:last-child
+            display: block
+            text-align: center
+            color: #1a3d7b
+            background-color: #f0f0f0
+            border: solid 1px #abc0df
+            margin-top: 15px
+          a:last-child:hover
+            background-image: linear-gradient(53deg,#c2e9fb 0%,#a1c4fd 100%),linear-gradient(#000000,#000000)
+            background-blend-mode: normal,normal
+            color: #fff
+    .page
+      display: flex
+      align-items: center
+      justify-content: center
+      width: 100%
+      li
+        padding: 0 5px
+        a
+          padding: 5px 10px
+          font-size: 16px
+          border: 1px solid #c9caca
+        a:hover
+          background-color: #214580
+          color: #fff
+// 产品内页样式
+.proi_cont
+  background-image: linear-gradient(0deg,#e6e9f0 0%,#eef0f5 100%)
+  opacity: 0.96
++media-breakpoint-up(sm)
+  .banner
+    .banner_cont
+      h1
+        font-size: 26px
+      p
+        font-size: 20px
++media-breakpoint-up(md)
+  .banner
+    .banner_cont
+      h1
+        font-size: 35px
+      p
+        font-size: 25px
+  .bread_nav
+    margin-top: 30px
+  .product_cont
+    padding: 40px 0
+    .product_list
+      .s_nav
+        padding: 15px 20px 30px
+      .product_box
+        ul
+          margin: 0 -12px
+          li
+            margin-bottom: 40px
+            float: left
+            width: 50%
+            padding: 0 12px
++media-breakpoint-up(lg)
+  .banner
+    .banner_cont
+      height: 100%
+      h1
+        font-size: 45px
+        margin-top: 3%
+      p
+        font-size: 25px
+        margin-top: 20px
+      span
+        display: block
+        margin-top: 40px
+      ul
+        display: flex
+        li
+          a
+            font-size: 20px
+            color: #fff
+  .bread_nav
+    display: none
+  .product_cont
+    padding: 50px 0
++media-breakpoint-up(xl)
+  .banner
+    .banner_cont
+      h1
+        font-size: 53px
+        margin-top: 5%
+  .product_cont
+    .product_list
+      .s_nav
+        display: block
+        float: left
+        width: 25%
+        padding: 15px 10px 0
+        li
+          margin: 0
+          padding: 10px 0
+        li:last-child
+          border-bottom: none
+      .product_box
+        float: left
+        width: 75%
+        padding-top: 0
+        padding-left: 20px
++media-breakpoint-up(xxl)
+  .banner
+    .banner_cont
+      h1
+        margin-top: 5%
+      span
+        margin-top: 80px
+        margin-bottom: 25px
+  .product_cont
+    .product_list
+      .s_nav
+        width: 20%
+      .product_box
+        width: 80%
+        ul
+          li
+            width: 33.33%
+@media(min-width: 1600px)
+  .banner
+    .banner_cont
+      span
+        margin-top: 110px
+@media(min-width: 1800px)
+  .banner
+    .banner_cont
+      h1
+        margin-top: 138px
