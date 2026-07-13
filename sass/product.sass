@@ -247,6 +247,33 @@
           color: #333
           text-align: center
           padding: 15px 0
+.case_list
+  .case_ul
+    li
+      margin-bottom: 20px
+      .anli_img
+        img
+          width: 100%
+        p
+          font-size: 16px
+          line-height: 24px
+          color: #000
+          padding: 10px 0
+          text-align: center
+  .page
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 100%
+    li
+      padding: 0 5px
+      a
+        padding: 5px 10px
+        font-size: 16px
+        border: 1px solid #c9caca
+      a:hover
+        background-color: #214580
+        color: #fff
 +media-breakpoint-up(sm)
   .banner
     .banner_cont
@@ -289,6 +316,13 @@
         a
           p
             font-size: 18px
+  .case_list
+    .case_ul
+      margin: 0 -15px
+      li
+        float: left
+        width: 50%
+        padding: 0 15px
 +media-breakpoint-up(lg)
   .banner
     .banner_cont
@@ -393,6 +427,12 @@
     ul
       li
         width: 33.33%
+  .case_list
+    .case_ul
+      li
+        width: 33.33%
+    .page
+      margin-top: 30px
 +media-breakpoint-up(xxl)
   .banner
     .banner_cont
