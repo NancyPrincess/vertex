@@ -125,6 +125,128 @@
 .proi_cont
   background-image: linear-gradient(0deg,#e6e9f0 0%,#eef0f5 100%)
   opacity: 0.96
+  padding: 40px 0
+  .proi_left
+    img
+      width: 100%
+  .proi_right
+    padding-top: 20px
+    h2
+      font-size: 20px
+      line-height: 24px
+      font-weight: bold
+    ul
+      display: flex
+      align-items: center
+      justify-content: flex-start
+      margin: 20px -5px
+      li
+        padding: 0 5px
+        p
+          font-size: 16px
+          text-align: center
+          border-radius: 13px
+          padding: 5px 10px
+      li:first-child
+        p
+          border: solid 1px #208a50
+          color: #208a50
+      li:nth-child(2)
+        p
+          border: solid 1px #ec6841
+          color: #ec6841
+      li:nth-child(3)
+        p
+          border: solid 1px #386ede
+          color: #386ede
+    .proi_des
+      font-size: 16px
+      color: #000
+      line-height: 24px
+    .proi_spe
+      margin-top: 15px
+      h3
+        font-size: 20px
+        color: #1d3f7f
+        font-weight: bold
+      .spec_text
+        display: flex
+        margin-top: 10px
+        p
+          font-size: 16px
+          color: #757575
+          margin-right: 30px
+          span
+            color: #000
+    .proi_button
+      display: flex
+      align-items: center
+      margin-top: 20px
+      a
+        display: block
+        font-size: 20px
+        padding: 6px 15px
+        color: #fff
+        background-color: #1e4897
+        border-radius: 30px
+        text-align: center
+      a:last-child
+        background-color: #d88828
+      a:first-child
+        margin-right: 15px
+.proi_intro
+  padding: 40px 0
+  h3
+    font-size: 20px
+    font-weight: bold
+    color: #000
+    margin-bottom: 20px
+  p
+    font-size: 16px
+    line-height: 25px
+    color: #000
+.proi_intro1
+  padding-bottom: 30px
+  h3
+    font-size: 20px
+    font-weight: bold
+    color: #000
+    margin-bottom: 20px
+  p
+    font-size: 16px
+    line-height: 25px
+    color: #000
+.proi_case
+  h3
+    position: relative
+    font-size: 20px
+    font-weight: bold
+    text-align: center
+    color: #000
+  h3::before, h3::after
+    position: absolute
+    content: ''
+    display: block
+    height: 1px
+    width: 25%
+    background-color: #bfbfbf
+    top: 50%
+    transform: translateY(-50%)
+  h3::before
+    left: 0
+  h3::after
+    right: 0
+  ul
+    margin-top: 20px
+    li
+      a
+        img
+          width: 100%
+        p
+          font-size: 16px
+          color: #333
+          text-align: center
+          padding: 15px 0
 +media-breakpoint-up(sm)
   .banner
     .banner_cont
@@ -154,6 +276,19 @@
             float: left
             width: 50%
             padding: 0 12px
+  .proi_case
+    padding: 30px 0
+    h3::before,h3::after
+      width: 35%
+    ul
+      margin: 40px -15px 0
+      li
+        float: left
+        width: 50%
+        padding: 0 15px
+        a
+          p
+            font-size: 18px
 +media-breakpoint-up(lg)
   .banner
     .banner_cont
@@ -177,6 +312,35 @@
     display: none
   .product_cont
     padding: 50px 0
+  .proi_cont
+    .proi_left
+      float: left
+      width: 50%
+      padding-right: 20px
+    .proi_right
+      float: left
+      width: 50%
+  .proi_intro
+    padding: 80px 0 60px
+    h3
+      font-size: 30px
+    p
+      font-size: 18px
+      line-height: 28px
+  .proi_intro1
+    padding-bottom: 60px
+    h3
+      font-size: 30px
+    p
+      font-size: 18px
+      line-height: 28px
+  .proi_case
+    h3
+      font-size: 30px
+    h3::before,h3::after
+      width: 32%
+    ul
+      margin-top: 55px
 +media-breakpoint-up(xl)
   .banner
     .banner_cont
@@ -200,6 +364,35 @@
         width: 75%
         padding-top: 0
         padding-left: 20px
+  .proi_cont
+    .proi_right
+      h2
+        font-size: 30px
+        line-height: 35px
+      ul
+        margin: 30px 0
+        li
+          p
+            font-size: 20px
+      .proi_des
+        font-size: 18px
+      .proi_spe
+        margin-top: 30px
+        h3
+          font-size: 25px
+        .spec_text
+          margin-top: 15px
+          p
+            font-size: 18px
+      .proi_button
+        margin-top: 30px
+        a
+          width: 290px
+          padding: 17px 15px
+  .proi_case
+    ul
+      li
+        width: 33.33%
 +media-breakpoint-up(xxl)
   .banner
     .banner_cont
@@ -217,6 +410,20 @@
         ul
           li
             width: 33.33%
+  .proi_cont
+    .proi_left
+      width: 46%
+      padding-right: 40px
+    .proi_right
+      width: 54%
+      padding-top: 45px
+      ul
+        margin-top: 45px
+      .proi_button
+        margin-top: 60px
+  .proi_case
+    h3::before,h3::after
+      width: 35%
 @media(min-width: 1600px)
   .banner
     .banner_cont
