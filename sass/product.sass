@@ -274,6 +274,222 @@
       a:hover
         background-color: #214580
         color: #fff
+.news_cont
+  .news_list
+    li
+      margin-bottom: 20px
+      border-bottom: solid 1px #e6e6e6
+      padding-bottom: 20px
+      a
+        display: block
+        .left
+          img
+            width: 100%
+        .right
+          padding-top: 15px
+          h3
+            font-size: 18px
+            line-height: 22px
+            color: #000
+            font-weight: bold
+          p
+            font-size: 16px
+            line-height: 20px
+            color: #000
+            margin: 10px 0 5px
+            display: -webkit-box
+            -webkit-line-clamp: 4
+            -webkit-box-orient: vertical
+            overflow: hidden
+            text-overflow: ellipsis
+          span
+            font-size: 16px
+            color: #003ba0
+    li:last-child
+      border-bottom: none
+  .page
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 100%
+    li
+      padding: 0 5px
+      a
+        padding: 5px 10px
+        font-size: 16px
+        border: 1px solid #c9caca
+      a:hover
+        background-color: #214580
+        color: #fff
+.newsi_cont
+  padding: 30px 0
+  border-top: 4px solid #e6e9f0
+  h2
+    font-size: 22px
+    line-height: 26px
+    color: #000
+    font-weight: bold
+    text-align: center
+    margin-bottom: 15px
+  p
+    font-size: 16px
+    line-height: 20px
+    color: #000
+  img
+    margin: 20px auto
+  .button
+    padding: 15px 0 5px
+    margin-top: 30px
+    background-color: #fbfbf9
+    a
+      display: block
+      font-size: 16px
+      color: #747474
+      margin-bottom: 10px
+      span
+        color: #000
+        font-weight: bold
+.about_cont
+  padding-top: 25px
+  .first
+    h2
+      font-size: 22px
+      font-weight: bold
+      color: #000
+      text-align: center
+      margin-bottom: 15px
+    p
+      font-size: 16px
+      line-height: 22px
+    img
+      margin: 20px auto
+  .second
+    background-color: #e6eef7
+    padding: 30px 0
+    h2
+      font-size: 22px
+      color: #000
+      font-weight: bold
+      text-align: center
+      margin-bottom: 15px
+    p
+      font-size: 16px
+      line-height: 22px
+      color: #000
+    #aboutSwiper
+      margin-top: 30px
+      ul
+        li
+          margin-bottom: 20px
+          img
+            width: 100%
+  .third
+    padding: 30px 0
+    h2
+      font-size: 22px
+      color: #073982
+      font-weight: bold
+      text-align: center
+      margin-bottom: 15px
+    p
+      font-size: 16px
+      line-height: 22px
+      color: #000
+    img
+      margin: 20px auto
+  .fourth
+    padding: 30px 0
+    background-color: #e6eef7
+    .four_cont
+      .left
+        margin-bottom: 25px
+        h2
+          font-size: 22px
+          color: #000
+          font-weight: bold
+          margin-bottom: 15px
+        .des
+          font-size: 18px
+          color: #000
+        .cont
+          margin-top: 10px
+          font-size: 16px
+          color: #000
+          line-height: 22px
+      .right
+        img
+          margin: 0 auto
+  .fifth
+    padding: 30px 0
+    h2
+      font-size: 22px
+      color: #000
+      font-weight: bold
+      text-align: center
+      margin-bottom: 15px
+    p
+      font-size: 16px
+      line-height: 22px
+      color: #000
+    img
+      margin: 20px auto
+.lianxi_cont
+  padding: 30px 0
+  h2
+    font-size: 22px
+    font-weight: bold
+    color: #000
+    text-align: center
+    margin-bottom: 10px
+  .des
+    font-size: 16px
+    line-height: 25px
+    color: #000
+  .det
+    padding: 20px
+    margin-top: 30px
+    background-color: #ffffff
+    box-shadow: 4px 7px 40px 0px rgba(0, 0, 0, 0.16)
+    border-radius: 15px
+    .left
+      margin-bottom: 25px
+      h3
+        position: relative
+        font-size: 26px
+        font-weight: bold
+        color: #0c1f47
+        border-bottom: 1px solid #abc0df
+        padding-bottom: 15px
+      h3::before
+        position: absolute
+        content: ''
+        display: block
+        width: 30px
+        height: 3px
+        background-color: #0c1f47
+        margin-bottom: 10px
+        left: 0
+        bottom: -12px
+      .tel
+        display: flex
+        align-items: center
+        margin-top: 20px
+        border-bottom: 1px solid #abc0df
+        padding-bottom: 15px
+        img
+          margin-right: 10px
+        p
+          span
+            font-size: 16px
+            color: #999
+            display: block
+            margin-bottom: 5px
+          a
+            font-size: 18px
+            color: #222222
+    .right
+      img
+        width: 100%
 +media-breakpoint-up(sm)
   .banner
     .banner_cont
@@ -323,6 +539,91 @@
         float: left
         width: 50%
         padding: 0 15px
+  .news_cont
+    .news_list
+      li
+        padding-bottom: 32px
+        margin-bottom: 32px
+        a
+          display: flex
+          align-items: center
+          .left
+            float: left
+            width: 35%
+          .right
+            float: left
+            width: 65%
+            padding: 0 0 0 20px
+    .page
+      margin-top: 45px
+  .about_cont
+    .first
+      h2
+        font-size: 26px
+      p
+        font-size: 18px
+        line-height: 26px
+      img
+        margin-top: 30px
+    .second
+      padding: 55px 0
+      h2
+        font-size: 26px
+        margin-bottom: 30px
+      p
+        font-size: 18px
+        line-height: 26px
+      #aboutSwiper
+        ul
+          margin: 0 -15px
+          li
+            float: left
+            width: 50%
+            padding: 0 15px
+    .third
+      padding: 55px 0
+      h2
+        font-size: 26px
+      p
+        font-size: 18px
+        line-height: 26px
+      img
+        margin-top: 30px
+    .fourth
+      padding: 55px 0
+      .four_cont
+        .left
+          h2
+            font-size: 26px
+          .des
+            font-size: 22px
+          .cont
+            font-size: 18px
+            line-height: 28px
+    .fifth
+      padding: 60px 0
+      h2
+        font-size: 26px
+        margin-bottom: 20px
+      p
+        font-size: 18px
+        line-height: 26px
+      img
+        margin-top: 30px
+  .lianxi_cont
+    h2
+      font-size: 26px
+    .des
+      font-size: 18px
+      line-height: 30px
+    .det
+      display: flex
+      align-items: center
+      .left
+        padding: 20px 40px 20px 20px
+        width: 50%
+      .map
+        width: 50%
 +media-breakpoint-up(lg)
   .banner
     .banner_cont
@@ -375,6 +676,83 @@
       width: 32%
     ul
       margin-top: 55px
+  .news_cont
+    .news_list
+      li
+        a
+          .right
+            padding-left: 30px
+            h3
+              font-size: 24px
+              line-height: 30px
+            p
+              font-size: 18px
+              line-height: 24px
+            span
+              font-size: 20px
+  .newsi_cont
+    padding-top: 40px
+    h2
+      font-size: 30px
+      margin-bottom: 25px
+    p
+      font-size: 18px
+      line-height: 25px
+    img
+      margin: 30px auto
+    .button
+      display: flex
+      justify-content: space-around
+  .about_cont
+    .first
+      h2
+        font-size: 30px
+    .second
+      h2
+        font-size: 30px
+      #aboutSwiper
+        ul
+          li
+            width: 33.33%
+    .third
+      h2
+        font-size: 30px
+    .fourth
+      .four_cont
+        display: flex
+        align-items: center
+        .left
+          float: left
+          width: 50%
+          margin-bottom: 0
+          h2
+            font-size: 30px
+          .des
+            margin-bottom: 15px
+        .right
+          float: left
+          width: 50%
+          padding-left: 30px
+    .fifth
+      h2
+        font-size: 30px
+  .lianxi_cont
+    padding: 50px 0
+    h2
+      font-size: 30px
+      margin-bottom: 20px
+    .det
+      margin-top: 55px
+      .left
+        h3
+          font-size: 42px
+        .tel
+          padding-bottom: 20px
+          img
+            margin-right: 20px
+          p
+            span
+              margin-bottom: 10px
 +media-breakpoint-up(xl)
   .banner
     .banner_cont
@@ -433,6 +811,21 @@
         width: 33.33%
     .page
       margin-top: 30px
+  .news_cont
+    .news_list
+      li
+        a
+          .left
+            width: 32%
+          .right
+            width: 68%
+  .about_cont
+    .fourth
+      .four_cont
+        .left
+          width: 65%
+        .right
+          width: 35%
 +media-breakpoint-up(xxl)
   .banner
     .banner_cont
@@ -464,6 +857,14 @@
   .proi_case
     h3::before,h3::after
       width: 35%
+  .news_cont
+    .news_list
+      li
+        a
+          .left
+            width: 25%
+          .right
+            width: 75%
 @media(min-width: 1600px)
   .banner
     .banner_cont
